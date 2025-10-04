@@ -45,7 +45,7 @@ def speak(words):
 def speak_thread(words):
     threading.Thread(target=speak, args=(words,), daemon=True).start()
 
-file = r"c:\Users\kbthe\Downloads\08fd33_4.mp4"
+file = r"example.mp4"
 
 video = cv2.VideoCapture(file)
 start = time.time()
