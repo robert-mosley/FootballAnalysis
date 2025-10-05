@@ -132,7 +132,7 @@ while True:
     if ball_coordinates:
         x1, y1, x2, y2 = ball_coordinates[0], ball_coordinates[1], ball_coordinates[2], ball_coordinates[3]
         cv2.rectangle(img, (x1, y1), (x2, y2), (0,255,0), 2)
-        cv2.putText(img, f"Ball ({nearest['label']})", (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
+        cv2.putText(img, "Ball", (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
 
 
     print(green_player, white_player)
@@ -154,3 +154,4 @@ while True:
     cv2.imshow("Game",img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
